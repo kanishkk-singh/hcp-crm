@@ -6,7 +6,7 @@ from langchain_groq import ChatGroq
 load_dotenv()
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-MODEL_PRIMARY = os.getenv("GROQ_MODEL_PRIMARY", "gemma2-9b-it")
+MODEL_PRIMARY = os.getenv("GROQ_MODEL_PRIMARY", "llama-3.1-8b-instant")
 MODEL_CONTEXT = os.getenv("GROQ_MODEL_CONTEXT", "llama-3.3-70b-versatile")
 
 # Primary fast/cheap model -- used for structured extraction, edits, summaries
